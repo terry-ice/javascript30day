@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>day_1_JavaScript Drum Kit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="keys">
+    <div data-key="65" class="key">
+      <kbd>A</kbd>
+      <span class="sound">clap</span>
+    </div>
+    <div data-key="83" class="key">
+      <kbd>S</kbd>
+      <span class="sound">hihat</span>
+    </div>
+    <div data-key="68" class="key">
+      <kbd>D</kbd>
+      <span class="sound">kick</span>
+    </div>
+    <div data-key="70" class="key">
+      <kbd>F</kbd>
+      <span class="sound">openhat</span>
+    </div>
+    <div data-key="71" class="key">
+      <kbd>G</kbd>
+      <span class="sound">boom</span>
+    </div>
+    <div data-key="72" class="key">
+      <kbd>H</kbd>
+      <span class="sound">ride</span>
+    </div>
+    <div data-key="74" class="key">
+      <kbd>J</kbd>
+      <span class="sound">snare</span>
+    </div>
+    <div data-key="75" class="key">
+      <kbd>K</kbd>
+      <span class="sound">tom</span>
+    </div>
+    <div data-key="76" class="key">
+      <kbd>L</kbd>
+      <span class="sound">tink</span>
+    </div>
+  </div>
+  <audio data-key="65" src="wav/clap.wav"></audio>
+  <audio data-key="83" src="wav/hihat.wav"></audio>
+  <audio data-key="68" src="wav/kick.wav"></audio>
+  <audio data-key="70" src="wav/openhat.wav"></audio>
+  <audio data-key="71" src="wav/boom.wav"></audio>
+  <audio data-key="72" src="wav/ride.wav"></audio>
+  <audio data-key="74" src="wav/snare.wav"></audio>
+  <audio data-key="75" src="wav/tom.wav"></audio>
+  <audio data-key="76" src="wav/tink.wav"></audio>
+
+  <script type="text/javascript">
+    /**
+     * 添加样式播放声音
+     * 
+     * @param {any} e 
+     */
+    function addPlay(e) {
+      const auto = document.querySelector(`audio[data-key="${e.keyCode}"]`)
+      const key = document.querySelector(`.key[data-key="${e.keyCode}"]`)
+      if (!auto) return false
+      auto.currentTime = 0
+      auto.play()
+      key.classList.add('playing')
+    }
+    /**
+     * 移除样式
+     * 
+     * @param {any} e 
+     */
+    function remove(e) {
+      const key = document.querySelector(`.key[data-key="${e.keyCode}"]`)
+      if (!key) return false
+      key.classList.remove("playing")
+    }
+    window.addEventListener('keydown', addPlay)
+    window.addEventListener('keyup', remove)
+  </script>
+</body>
+
+</html>
