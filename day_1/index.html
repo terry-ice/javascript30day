@@ -65,11 +65,11 @@
      * @param {any} e 
      */
     function addPlay(e) {
-      const auto = document.querySelector(`audio[data-key="${e.keyCode}"]`)
+      const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`)
       const key = document.querySelector(`.key[data-key="${e.keyCode}"]`)
       if (!auto) return false
-      auto.currentTime = 0
-      auto.play()
+      audio.currentTime = 0
+      audio.play()
       key.classList.add('playing')
     }
     /**
