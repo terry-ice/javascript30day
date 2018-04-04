@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JS and CSS Clock</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <div>
+    <ul id="clock">
+      <li id="date"></li>
+      <li id="seconds"></li>
+      <li id="hours"></li>
+      <li id="minutes"></li>
+    </ul>
+  </div>
+  <script type="text/javascript">
+    const hoursdHand = document.querySelector('#hours') //时针
+    const todayHand = document.querySelector('#date') //日期
+    const minutesdHand = document.querySelector('#minutes') //分针
+    const secondHand = document.querySelector('#seconds') //秒针
+    function setData() {
+      const now = new Date();
+      const today = now.getDay()
+      todayHand.innerHTML = today + 1
+      const seconds = now.getSeconds()
+      const secondsDegrees = (seconds / 60) * 360
+      secondHand.style.transform = `rotate(${secondsDegrees}deg)`
+      //处理秒结束 
+      const minutes = now.getMinutes()
+      const minutesDegrees = (minutes / 60) * 360
+      minutesdHand.style.transform = `rotate(${minutesDegrees}deg)`
+      //处理分结束 
+      let hours = now.getHours()
+      hours = hours + minutes / 100
+      const hoursDegrees = (((hours / 12) * 360))
+      hoursdHand.style.transform = `rotate(${hoursDegrees}deg)`
+      //处理时开始
+    }
+
+    setInterval(setData, 1000)
+  </script>
+</body>
+
+</html>
