@@ -67,7 +67,7 @@
     function addPlay(e) {
       const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`)
       const key = document.querySelector(`.key[data-key="${e.keyCode}"]`)
-      if (!auto) return false
+      if (!audio) return false
       audio.currentTime = 0
       audio.play()
       key.classList.add('playing')
