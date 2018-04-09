@@ -25,8 +25,7 @@
     const secondHand = document.querySelector('#seconds') //秒针
     function setData() {
       const now = new Date();
-      const today = now.getDay()
-      todayHand.innerHTML = today + 1
+      todayHand.innerHTML = now.getDate()
       const seconds = now.getSeconds()
       const secondsDegrees = (seconds / 60) * 360
       secondHand.style.transform = `rotate(${secondsDegrees}deg)`
