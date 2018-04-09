@@ -61,10 +61,10 @@
   <script type="text/javascript">
     /**
      * 添加样式播放声音
-     * 
-     * @param {any} e 
+     *
+     * @param {any} e
      */
-    function addPlay(e) {
+    function addPlay (e) {
       const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`)
       const key = document.querySelector(`.key[data-key="${e.keyCode}"]`)
       if (!audio) return false
@@ -74,13 +74,13 @@
     }
     /**
      * 移除样式
-     * 
-     * @param {any} e 
+     *
+     * @param {any} e
      */
-    function remove(e) {
+    function remove (e) {
       const key = document.querySelector(`.key[data-key="${e.keyCode}"]`)
       if (!key) return false
-      key.classList.remove("playing")
+      key.classList.remove('playing')
     }
     window.addEventListener('keydown', addPlay)
     window.addEventListener('keyup', remove)
