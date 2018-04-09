@@ -131,14 +131,34 @@
     console.table(sortLived)
     // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
     // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
-
+    /* const list = document.querySelector('.mw-category')
+        const link = list.querySelectorAll('a')
+        const links = Array.from(link)
+        const de = links.map(item => item.textContent)
+        const res = de.filter(item => item.includes('de'))
+        console.table(res) */
     // 7. sort Exercise
     // Sort the people alphabetically by last name
+    const sortName = people.sort((a, b) => {
+      const [aLast] = a.split(',')
+      const [bLast] = b.split(',')
+      return aLast > bLast ? 1 : -1
+    })
+    console.table(sortName)
     // 8. Reduce Exercise
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car',
-      'truck'
+      'truck', 'terry'
     ]
+    const dataName = data.reduce((obj, item) => {
+      if (item in obj) {
+        obj[item]++
+      } else {
+        obj[item] = 1
+      }
+      return obj
+    }, {})
+    console.table(dataName)
   </script>
 </body>
 
