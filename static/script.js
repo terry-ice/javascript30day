@@ -6,7 +6,7 @@ const blogUrl = 'http://www.592php.com/'
 const githubUrl = 'https://github.com/592php/javascript30day/tree/master/'
 
 const couseList = document.querySelector('.courseList')
-fetch('postData.json')
+fetch('index.json')
   .then(blob => blob.json())
   .then(data => {
     postDatas.push(...data)
