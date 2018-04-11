@@ -5,13 +5,13 @@
 - 开始日期2018年04月03日
 - 结束日期、、、
 ## 目标
-- [x] JavaScript Drum Kit
-- [x] CSS + JS Clock
-- [x] Playing with CSS Variables and JS
-- [x] Array Cardio Day 1
-- [x] Flex Panels Image Gallery
-- [x] Ajax Type Ahead
-- [ ] Array Cardio Day 2
+- [x] JavaScript Drum Kit  -- 完成✨✨🎉🎉
+- [x] CSS + JS Clock -- 完成✨✨🎉🎉
+- [x] Playing with CSS Variables and JS -- 完成✨✨🎉🎉
+- [x] Array Cardio Day 1 -- 完成✨✨🎉🎉
+- [x] Flex Panels Image Gallery -- 完成✨✨🎉🎉
+- [x] Ajax Type Ahead -- 完成✨✨🎉🎉
+- [ ] Array Cardio Day 2 
 - [ ] Fun with HTML5 Canvas
 - [ ] 14 Must Know Dev Tools Tricks
 - [ ] Hold Shift to Check Multiple Checkboxes
