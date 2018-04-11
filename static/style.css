@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: #ffc600;
+  background-color: #ee4b28;
   color: #333;
   font-family: "Questrial", "微軟正黑體", sans-serif;
 }
@@ -38,7 +38,7 @@ body {
 
 .head__title {
   padding: 10px 30px;
-  background-color: #f7df1e;
+  background-color: #ee4b28;
   font-size: 60px;
   font-family: "Montserrat";
 }
