@@ -22,11 +22,13 @@ function createView () {
 <div class="course__desc">${data.desc}</div>
 <a class="course__btn" href="${github +
   data.github}" target="_blank" >Demo</a>
-<a class="course__btn" href="${blogUrl + data.blog}" target="_blank" >笔记</a>
-<a class="course__btn" href="${githubUrl +
-      data.github}" target="_blank">Source Code</a>
+<a class="course__btn"  href="${githubUrl +
+  data.github}" target="_blank" >笔记</a>
+
 </div>
 </li>`)
   })
   document.querySelector('.courseList').innerHTML = view.join('')
 }
+// <a class="course__btn" href="${githubUrl +
+//   data.github}" target="_blank">Source Code</a>
