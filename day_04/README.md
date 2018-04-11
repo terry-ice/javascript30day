@@ -88,18 +88,17 @@ console.table(dataName)
 
 ## 涉及相关知识点
 首先是es6的[箭头函数](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
-箭头函数表达式的语法比函数表达式更短，并且不绑定自己的this，arguments，super或 new.target。这些函数表达式最适合用于非方法函数，并且它们不能用作构造函数。 
-
+箭头函数表达式的语法比函数表达式更短，并且不绑定自己的this，arguments，super或 new.target。这些函数表达式最适合用于非方法函数，并且它们不能用作构造函数。   
 [Array.prototype](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array)
-数组相关的一些操作方法
-Array.prototype.concat() 方法用于合并两个或多个数组。此方法不会更改现有数组，而是返回一个新数组。
+数组相关的一些操作方法   
+Array.prototype.[concat()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/concat) 方法用于合并两个或多个数组。此方法不会更改现有数组，而是返回一个新数组。
 ```js
 var array1 = ['a', 'b', 'c'];
 var array2 = ['d', 'e', 'f'];
 console.log(array1.concat(array2));
 // expected output: Array ["a", "b", "c", "d", "e", "f"]
 ```
-Array.prototype.filter() 方法创建一个新数组, 其包含通过所提供函数实现的测试的所有元素。
+Array.prototype.[filter()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) 方法创建一个新数组, 其包含通过所提供函数实现的测试的所有元素。
 ```js
 function isBigEnough(value) {
   return value >= 10;
@@ -112,7 +111,7 @@ let [...spread]= [12, 5, 8, 130, 44];
 let filtered = spread.filter(isBigEnough);
 // filtered is [12, 130, 44]
 ```
-Array.prototype.map() 方法创建一个新数组，其结果是该数组中的每个元素都调用一个提供的函数后返回的结果。
+Array.prototype.[map(https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/map)]()方法创建一个新数组，其结果是该数组中的每个元素都调用一个提供的函数后返回的结果。
 ```js
 // ES6
 let numbers = [1, 5, 10, 15];
@@ -122,7 +121,7 @@ let doubles = numbers.map( x => x ** 2);
 // numbers is still [1, 5, 10, 15]
 ```
 
-Array.prototype.sort() 方法用就地（ in-place ）的算法对数组的元素进行排序，并返回数组。 sort 排序不一定是稳定的。默认排序顺序是根据字符串Unicode码点。
+Array.prototype.[sort()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) 方法用就地（ in-place ）的算法对数组的元素进行排序，并返回数组。 sort 排序不一定是稳定的。默认排序顺序是根据字符串Unicode码点。
 ```js
 var fruit = ['cherries', 'apples', 'bananas'];
 fruit.sort(); 
@@ -138,7 +137,7 @@ things.sort();
 // 在Unicode中, 数字在大写字母之前,
 // 大写字母在小写字母之前.
 ```
-Array.prototype.reduce() 方法对累加器和数组中的每个元素（从左到右）应用一个函数，将其减少为单个值。
+Array.prototype.[reduce()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce) 方法对累加器和数组中的每个元素（从左到右）应用一个函数，将其减少为单个值。
 ```js
 const array1 = [1, 2, 3, 4];
 const reducer = (accumulator, currentValue) => accumulator + currentValue;

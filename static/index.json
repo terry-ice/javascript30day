@@ -1,0 +1,30 @@
+[
+  {
+    "no": 1,
+    "title": "JavaScript Drum Kit",
+    "desc": "JavaScript实现模拟敲鼓效果",
+    "blog": "",
+    "github": "day_01/"
+  },
+  {
+    "no": 2,
+    "title": "JS and CSS Clock",
+    "desc": "JavaScript实现动态时钟效果",
+    "blog": "",
+    "github": "day_02/"
+  },
+  {
+    "no": 3,
+    "title": "CSS Variables",
+    "desc": "JavaScript实现用 CSS 变量实现拖动控制参数效果",
+    "blog": "",
+    "github": "day_03/"
+  },
+  {
+    "no": 4,
+    "title": "Array Cardio Day 1",
+    "desc": "数组一些方法的应用案例",
+    "blog": "",
+    "github": "day_04/"
+  }
+]
