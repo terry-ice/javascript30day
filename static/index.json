@@ -26,5 +26,19 @@
     "desc": "数组一些方法的应用案例",
     "blog": "",
     "github": "day_04/"
+  },
+  {
+    "no": 5,
+    "title": "Flex Panels Image Gallery",
+    "desc": "动画效果点击展开",
+    "blog": "",
+    "github": "day_05/"
+  },
+  {
+    "no": 6,
+    "title": "Ajax Type Ahead",
+    "desc": "输入关键词搜索提示",
+    "blog": "",
+    "github": "day_06/"
   }
 ]
