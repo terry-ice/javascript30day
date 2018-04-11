@@ -15,8 +15,8 @@
   },
   {
     "no": 3,
-    "title": "CSS Variables",
-    "desc": "JavaScript实现用 CSS 变量实现拖动控制参数效果",
+    "title": "Playing with CSS Variables and JS",
+    "desc": "JavaScript实现用CSS 变量实现拖动控制参数效果",
     "blog": "",
     "github": "day_03/"
   },

@@ -4,6 +4,7 @@ const postDatas = []
 const blogUrl = 'http://www.592php.com/'
 // github url
 const githubUrl = 'https://github.com/592php/javascript30day/tree/master/'
+const github = 'https://592php.github.io/javascript30day/'
 
 const couseList = document.querySelector('.courseList')
 fetch('static/index.json')
@@ -19,9 +20,8 @@ function createView () {
 <div class="course">
 <h2 class="course__title">第 ${data.no} 天 - ${data.title}</h2>
 <div class="course__desc">${data.desc}</div>
-<a class="course__btn" href="${blogUrl}JavaScript30day/${
-  data.github
-}" target="_blank" >Demo</a>
+<a class="course__btn" href="${github +
+  data.github}" target="_blank" >Demo</a>
 <a class="course__btn" href="${blogUrl + data.blog}" target="_blank" >笔记</a>
 <a class="course__btn" href="${githubUrl +
       data.github}" target="_blank">Source Code</a>
