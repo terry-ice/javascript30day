@@ -40,7 +40,6 @@
       color: white;
       text-align: center;
       flex: 1;
-      align-items: center;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -153,17 +152,8 @@
     const list = document.querySelectorAll('.panel')
 
     function toggle () {
-      // console.log(this)
       this.classList.toggle('open')
     }
-
-    // function trans (e) {
-    //   console.log(e, 'propertyName')
-    //   console.log(e.propertyName.includes('flex'), '566')
-    //   if (e.propertyName.includes('flex')) {
-    //     this.classList.toggle('open-active')
-    //   }
-    // }
     function toggleActive (e) {
       console.log(e.propertyName)
       if (e.propertyName.includes('flex')) {
