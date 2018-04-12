@@ -11,7 +11,7 @@ id | 名称 | 笔记 | Demo
 4 | Array Cardio Day 1(day04) | [数组一些方法的应用案例](https://github.com/592php/javascript30day/tree/master/day_04/) |  [数组一些方法的应用案例](https://592php.github.io/javascript30day/day_04/)
 5 | Flex Panels Image Gallery(day05) | [动画效果点击展开](https://github.com/592php/javascript30day/tree/master/day_05/) |  [动画效果点击展开](https://592php.github.io/javascript30day/day_05/)
 6 | Ajax Type Ahead (day06) | [输入关键词搜索提示](https://github.com/592php/javascript30day/tree/master/day_06/) |  [输入关键词搜索提示](https://592php.github.io/javascript30day/day_06/)
-6 | Array Cardio Day 2 (day07) | [数组一些方法2](https://github.com/592php/javascript30day/tree/master/day_07/) |  [数组一些方法2](https://592php.github.io/javascript30day/day_07/)
+7 | Array Cardio Day 2 (day07) | [数组一些方法2](https://github.com/592php/javascript30day/tree/master/day_07/) |  [数组一些方法2](https://592php.github.io/javascript30day/day_07/)
 ## 时间
 - 开始日期2018年04月03日
 - 结束日期、、、
