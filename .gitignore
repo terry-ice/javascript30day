@@ -1,3 +1,13 @@
-.DS_Store
+*.class
+*.svn
 .idea
-.vscode
+*.exe
+*.exe~
+target
+vendor
+*.jar
+*.war
+*.ear
+.DS_Store
+*.iml
+#pkg
