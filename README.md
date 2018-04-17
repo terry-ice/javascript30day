@@ -12,6 +12,7 @@ id | 名称 | 笔记 | Demo
 5 | Flex Panels Image Gallery(day05) | [动画效果点击展开](https://github.com/592php/javascript30day/tree/master/day_05/) |  [动画效果点击展开](https://592php.github.io/javascript30day/day_05/)
 6 | Ajax Type Ahead (day06) | [输入关键词搜索提示](https://github.com/592php/javascript30day/tree/master/day_06/) |  [输入关键词搜索提示](https://592php.github.io/javascript30day/day_06/)
 7 | Array Cardio Day 2 (day07) | [数组一些方法2](https://github.com/592php/javascript30day/tree/master/day_07/) |  [数组一些方法2](https://592php.github.io/javascript30day/day_07/)
+8 | Fun with HTML5 Canvas (day08) | [通过canvas实现渐变绘图](https://github.com/592php/javascript30day/tree/master/day_08/) |  [通过canvas实现渐变绘图](https://592php.github.io/javascript30day/day_08/)
 ## 时间
 - 开始日期2018年04月03日
 - 结束日期、、、
@@ -23,7 +24,7 @@ id | 名称 | 笔记 | Demo
 - [x] Flex Panels Image Gallery -- 完成✨✨🎉🎉
 - [x] Ajax Type Ahead -- 完成✨✨🎉🎉
 - [x] Array Cardio Day 2 -- 完成✨✨🎉🎉
-- [ ] Fun with HTML5 Canvas
+- [x] Fun with HTML5 Canvas
 - [ ] 14 Must Know Dev Tools Tricks
 - [ ] Hold Shift to Check Multiple Checkboxes
 - [ ] Custom HTML5 Video Player
