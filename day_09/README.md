@@ -1,45 +1,104 @@
-# Fun with HTML5 Canvas(day08)
-> 简介：[JavaScript30](https://javascript30.com) 是 [Wes Bos](https://github.com/wesbos) 推出的一个 30 天挑战。项目免费提供了 30 个视频教程、30 个挑战的起始文档和 30 个挑战解决方案源代码。目的是帮助人们用纯 JavaScript 来写东西，不借助框架和库，也不使用编译器和引用。现在你看到的是这系列指南的第 8 篇。
+# Console Tricks(day09)
+> 简介：[JavaScript30](https://javascript30.com) 是 [Wes Bos](https://github.com/wesbos) 推出的一个 30 天挑战。项目免费提供了 30 个视频教程、30 个挑战的起始文档和 30 个挑战解决方案源代码。目的是帮助人们用纯 JavaScript 来写东西，不借助框架和库，也不使用编译器和引用。现在你看到的是这系列指南的第 9 篇。
 
 ## 介绍
-这一节课程比较简单，简单介绍了数组的操作的some，every，find，slice，splice
+开发工具Console 的使用
+* log
+* warn 
+* error
+* info
+* clear
+* dir
+* groupCollapsed
+* groupEnd
+* count 
+* time 
+* timeEnd
 ## 具体实现步骤
-### 判断是否有人超过 19 岁
+可在控制台中输入查看具体作用
 ```js
-const now = new Date()
-const some = people.some((item) => (now.getFullYear() - item.year) > 19)
-console.log(some, 'some')
+   const dogs = [{
+            name: 'Snickers',
+            age: 2
+        }, {
+            name: 'hugo',
+            age: 8
+        }];
+
+        function makeGreen() {
+            const p = document.querySelector('p');
+            p.style.color = '#BADA55';
+            p.style.fontSize = '50px';
+        }
+        // Regular  //基本
+        console.log('consoe.log test')
+        // Interpolated 替换字符串
+        console.log("Hello I am a %s string!", "💩");
+        // Styled  设置样式
+        console.log('%c 我的字体变大啦', 'font-size:50px;');
+        console.log("I am a string: %s ", "log"); //log
+        console.log("I am a float number: %f ", 1.23); //1.23
+        console.log("I am a object: %o ", {
+            name: "allen"
+        }); // {name:"allen"}
+        console.log("I am a int number: %d ", 1); //1
+        console.log("%c other style", "color: #00fdff; font-size: 2em;");
+
+        // 各式不同的訊息類型
+        // warning!
+        console.warn("OH NOOO");
+        // Error :|
+        console.error("OH NOOO");
+        // Info
+        console.info("OH NOOO");
+
+        // Testing
+        const p = document.querySelector("p");
+        console.assert(p.classList.contains("ouch"), "That is wrong!");
+
+        // clearing 清除 console
+        console.clear();
+
+        // Viewing DOM Elements
+        console.log(p);
+        console.dir(p);
+        console.clear();
+
+        // Grouping together
+        dogs.forEach(dog => {
+            // 此是分组标题文字
+            console.groupCollapsed(`${dog.name}`);
+            console.log(`This is ${dog.name}`);
+            console.log(`${dog.name} is ${dog.age} years old`);
+            console.log(`${dog.name} is ${dog.age * 7} dog years old`);
+            console.groupEnd(`${dog.name}`);
+        });
+
+        // counting
+        console.count("Wes");
+        console.count("Wes");
+        console.count("Steve");
+        console.count("Steve");
+        console.count("Wes");
+        console.count("Steve");
+        console.count("Wes");
+        console.count("Steve");
+        console.count("Steve");
+        console.count("Steve");
+        console.count("Steve");
+        console.count("Steve");
+
+        // timing
+        console.time("fetching data"); //启动一个计时器
+        fetch("https://api.github.com/users/wesbos")
+            .then(data => data.json())
+            .then(data => {
+                console.timeEnd("fetching data");//毫秒为单位 显示
+                console.log(data);
+            });
 ```
-### 判断是否所有人都是成年人
-```js
-const every = people.every((item) =>
-  (now.getFullYear() - item.year) > 19
-)
-console.log(every, 'every')
-```
-### 返回 id 为 823423 的数据
-```js
-const find = comments.find(item => item.id === 823423)
-console.log(find, 'find')
-```
-### 找到 id为 823423 的数据下标
-```js
-const findIndex = comments.findIndex(item => item.id === 823423)
-console.log(findIndex, 'findIndex')
-```
-### 删除 id为 823423 的数据
-```js
-comments.splice(findIndex, 1)
-```
+
 ## 涉及相关知识点
-* [some](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/some)方法测试数组中的某些元素是否通过由提供的函数实现的测试。
-* [every](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/every)every() 方法测试数组的所有元素是否都通过了指定函数的测试。
-* [find](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/find)方法返回数组中满足提供的测试函数的第一个元素的值。否则返回 undefined。
-* [findIndex](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex)方法返回数组中满足提供的测试函数的第一个元素的索引。否则返回-1。
-* [slice](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)方法返回一个从开始到结束（不包括结束）选择的数组的一部分浅拷贝到一个新数组对象。且原始数组不会被修改。
-* [splice](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)方法通过删除现有元素和/或添加新元素来更改一个数组的内容。
-### 扩展
-splice() 方法与 slice() 方法的作用是不同的，splice() 方法会直接对数组进行修改。
 
 ## 参考资料
 * [JavaScript 30天](https://javascript30.com/)
