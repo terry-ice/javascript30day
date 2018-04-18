@@ -40,5 +40,19 @@
     "desc": "输入关键词搜索提示",
     "blog": "",
     "github": "day_06/"
+  },
+  {
+    "no": 7,
+    "title": "Array Cardio Day 2",
+    "desc": "数组一些方法2",
+    "blog": "",
+    "github": "day_07/"
+  },
+  {
+    "no": 8,
+    "title": "Fun with HTML5 Canvas",
+    "desc": "通过canvas实现渐变绘图",
+    "blog": "",
+    "github": "day_08/"
   }
 ]

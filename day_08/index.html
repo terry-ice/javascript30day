@@ -19,49 +19,47 @@
     <canvas id="draw" width="800" height="800"></canvas>
     <script>
         const canvas = document.querySelector('#draw')
-        const cxt = canvas.getContext('2d')
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-        cxt.strokeStyle = "#BADA55"
-        cxt.lineJoin = 'round'
-        cxt.lineCap = 'round'
-        cxt.lineWidth = 1;
-        // cxt.globalCompositeOperation ='multiply';
+        const ctx = canvas.getContext('2d')
+        canvas.width = window.innerWidth
+        canvas.height = window.innerHeight
+        ctx.strokeStyle = '#BADA55' // 线条的颜色，默认为”#000000”
+        ctx.lineJoin = 'round' // 线条的转折处样式 默认miter（尖角
+        ctx.lineCap = 'round' // 线条的端点样式 butt（无）、round（圆头）、square（方头）
+        ctx.lineWidth = 1
+        // ctx.globalCompositeOperation ='multiply';
 
-        let isDrawing = false;
-        let lastX = 0;
-        let lastY = 0;
-        let hue = 0;
-        let direction = true;
+        let isDrawing = false
+        let lastX = 0
+        let lastY = 0
+        let hue = 0
+        let direction = true
 
-        function draw(e) {
-            if (!isDrawing) return;
-            cxt.strokeStyle = `hsl(${hue},100%,50%)`
-            cxt.beginPath();
-            cxt.moveTo(lastX, lastY);
-            cxt.lineTo(e.offsetX, e.offsetY)
-            cxt.stroke();
-            [lastX, lastY] = [e.offsetX, e.offsetY]
-            hue++;
-            if (hue >= 360) {
-                hue = 0;
-            }
-            if (cxt.lineWidth >= 100 || cxt.lineWidth <= 1) {
-                console.log(cxt.lineWidth)
-                direction = !direction;
-            }
-            if (direction) {
-                cxt.lineWidth++;
-            } else {
-                cxt.lineWidth--;
-            }
+        function draw (e) {
+          if (!isDrawing) return
+          ctx.strokeStyle = `hsl(${hue},100%,50%)`
+          ctx.beginPath()
+          ctx.moveTo(lastX, lastY)
+          ctx.lineTo(e.offsetX, e.offsetY)
+          ctx.stroke();
+          [lastX, lastY] = [e.offsetX, e.offsetY]
+          hue++
+          if (hue >= 360) {
+            hue = 0
+          }
+          if (ctx.lineWidth >= 100 || ctx.lineWidth <= 1) {
+            console.log(ctx.lineWidth)
+            direction = !direction
+          }
+          if (direction) {
+            ctx.lineWidth++
+          } else {
+            ctx.lineWidth--
+          }
         }
 
-
-
         canvas.addEventListener('mousedown', (e) => {
-            isDrawing = true;
-            [lastX, lastY] = [e.offsetX, e.offsetY]
+          isDrawing = true;
+          [lastX, lastY] = [e.offsetX, e.offsetY]
         })
         canvas.addEventListener('mousemove', draw)
         canvas.addEventListener('mouseup', () => isDrawing = false)
