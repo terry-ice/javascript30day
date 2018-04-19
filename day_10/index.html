@@ -108,7 +108,7 @@
                 if(checkbox === this || checkbox === lastChecked){
                     inBetween = !inBetween;
                 }
-                if(inBetween){
+                if(inBetween && lastChecked){
                     checkbox.checked = true;
                 }
             })
