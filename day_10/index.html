@@ -108,7 +108,7 @@
                 if(checkbox === this || checkbox === lastChecked){
                     inBetween = !inBetween;
                 }
-                if(inBetween){
+                if(inBetween && lastChecked ){  //解决直接shift点击选中的bug
                     checkbox.checked = true;
                 }
             })
