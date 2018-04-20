@@ -54,5 +54,19 @@
     "desc": "通过canvas实现渐变绘图",
     "blog": "",
     "github": "day_08/"
+  },
+  {
+    "no": 9,
+    "title": "14 Must Know Dev Tools Tricks",
+    "desc": "控制台输出",
+    "blog": "",
+    "github": "day_09/"
+  },
+  {
+    "no": 10,
+    "title": "Hold Shift to Check Multiple Checkboxes",
+    "desc": "通过shift实现多选",
+    "blog": "",
+    "github": "day_10/"
   }
 ]
