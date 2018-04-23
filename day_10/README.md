@@ -11,7 +11,7 @@ checkboxes.forEach(checkbox =>checkbox.addEventListener('click',handleCheck))
 ```
 ### 通过事件Event判断shiftKey状态和当前选中状态，声明选中判断变量
 e.shiftKey && this.checked
-### 遍历所有的checkboxes,根据变量inBetween判断是否选中
+### 遍历所有的checkboxes,根据变量inBetween判断是否选中
 完整代码:
 ```js
     const checkboxes = document.querySelectorAll('.inbox input[type="checkbox"]')

@@ -1,20 +1,20 @@
 # javascript30day
 > 简介：[JavaScript30](https://javascript30.com) 是 [Wes Bos](https://github.com/wesbos) 推出的一个 30 天挑战。项目免费提供了 30 个视频教程、30 个挑战的起始文档和 30 个挑战解决方案源代码。目的是帮助人们用纯 JavaScript 来写东西，不借助框架和库，也不使用编译器和引用。[视频地址](https://www.bilibili.com/video/av8481988/)
-- [所有已经实现列表](https://592php.github.io/javascript30day)
+- [所有已经实现列表](https://terry-ice.github.io/javascript30day)
 
 ## 实现列表
 id | 名称 | 笔记 | Demo
 --- | --- | --- | ---
-1 | JavaScript Drum Kit(day01) | [JavaScript实现模拟敲鼓效果](https://github.com/592php/javascript30day/tree/master/day_01/) |  [JavaScript实现模拟敲鼓效果](https://592php.github.io/javascript30day/day_01/)
-2 | JJS and CSS Clock(day02) | [JavaScript实现动态时钟效果](https://github.com/592php/javascript30day/tree/master/day_02/) |  [JavaScript实现动态时钟效果](https://592php.github.io/javascript30day/day_02/)
-3 | Playing with CSS Variables and JS(day03) | [JavaScript实现用CSS 变量实现拖动控制参数效果](https://github.com/592php/javascript30day/tree/master/day_03/) |  [JavaScript实现用CSS 变量实现拖动控制参数效果](https://592php.github.io/javascript30day/day_03/)
-4 | Array Cardio Day 1(day04) | [数组一些方法的应用案例](https://github.com/592php/javascript30day/tree/master/day_04/) |  [数组一些方法的应用案例](https://592php.github.io/javascript30day/day_04/)
-5 | Flex Panels Image Gallery(day05) | [动画效果点击展开](https://github.com/592php/javascript30day/tree/master/day_05/) |  [动画效果点击展开](https://592php.github.io/javascript30day/day_05/)
-6 | Ajax Type Ahead (day06) | [输入关键词搜索提示](https://github.com/592php/javascript30day/tree/master/day_06/) |  [输入关键词搜索提示](https://592php.github.io/javascript30day/day_06/)
-7 | Array Cardio Day 2 (day07) | [数组一些方法2](https://github.com/592php/javascript30day/tree/master/day_07/) |  [数组一些方法2](https://592php.github.io/javascript30day/day_07/)
-8 | Fun with HTML5 Canvas (day08) | [通过canvas实现渐变绘图](https://github.com/592php/javascript30day/tree/master/day_08/) |  [通过canvas实现渐变绘图](https://592php.github.io/javascript30day/day_09d/)
-9 | 14 Must Know Dev Tools Tricks(day09) | [控制台调试输出](https://github.com/592php/javascript30day/tree/master/day_09/) |  [控制台调试输出](https://592php.github.io/javascript30day/day_08/)
-10 | Hold Shift to Check Multiple Checkboxes (day10) | [通过shift实现多选](https://github.com/592php/javascript30day/tree/master/day_10/) |  [通过shift实现多选](https://592php.github.io/javascript30day/day_10/)
+1 | JavaScript Drum Kit(day01) | [JavaScript实现模拟敲鼓效果](https://github.com/terry-ice/javascript30day/tree/master/day_01/) |  [JavaScript实现模拟敲鼓效果](https://terry-ice.github.io/javascript30day/day_01/)
+2 | JJS and CSS Clock(day02) | [JavaScript实现动态时钟效果](https://github.com/terry-ice/javascript30day/tree/master/day_02/) |  [JavaScript实现动态时钟效果](https://terry-ice.github.io/javascript30day/day_02/)
+3 | Playing with CSS Variables and JS(day03) | [JavaScript实现用CSS 变量实现拖动控制参数效果](https://github.com/terry-ice/javascript30day/tree/master/day_03/) |  [JavaScript实现用CSS 变量实现拖动控制参数效果](https://terry-ice.github.io/javascript30day/day_03/)
+4 | Array Cardio Day 1(day04) | [数组一些方法的应用案例](https://github.com/terry-ice/javascript30day/tree/master/day_04/) |  [数组一些方法的应用案例](https://terry-ice.github.io/javascript30day/day_04/)
+5 | Flex Panels Image Gallery(day05) | [动画效果点击展开](https://github.com/terry-ice/javascript30day/tree/master/day_05/) |  [动画效果点击展开](https://terry-ice.github.io/javascript30day/day_05/)
+6 | Ajax Type Ahead (day06) | [输入关键词搜索提示](https://github.com/terry-ice/javascript30day/tree/master/day_06/) |  [输入关键词搜索提示](https://terry-ice.github.io/javascript30day/day_06/)
+7 | Array Cardio Day 2 (day07) | [数组一些方法2](https://github.com/terry-ice/javascript30day/tree/master/day_07/) |  [数组一些方法2](https://terry-ice.github.io/javascript30day/day_07/)
+8 | Fun with HTML5 Canvas (day08) | [通过canvas实现渐变绘图](https://github.com/terry-ice/javascript30day/tree/master/day_08/) |  [通过canvas实现渐变绘图](https://terry-ice.github.io/javascript30day/day_09d/)
+9 | 14 Must Know Dev Tools Tricks(day09) | [控制台调试输出](https://github.com/terry-ice/javascript30day/tree/master/day_09/) |  [控制台调试输出](https://terry-ice.github.io/javascript30day/day_08/)
+10 | Hold Shift to Check Multiple Checkboxes (day10) | [通过shift实现多选](https://github.com/terry-ice/javascript30day/tree/master/day_10/) |  [通过shift实现多选](https://terry-ice.github.io/javascript30day/day_10/)
 
 ## 时间
 - 开始日期2018年04月03日
