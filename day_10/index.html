@@ -96,19 +96,19 @@
 
   <script>
     const checkboxes = document.querySelectorAll('.inbox input[type="checkbox"]')
-    let lastChecked;
+    let lastChecked
 
-    function handleCheck(e) {
-      //console.log(e.shiftKey); //shift是否按住
-      //console.log(this.checked); //是否选中
+function handleCheck (e) {
+      // console.log(e.shiftKey); //shift是否按住
+      // console.log(this.checked); //是否选中
       let inBetween = false
       if (e.shiftKey && this.checked) {
         checkboxes.forEach(checkbox => {
           if (checkbox === this || checkbox === lastChecked) {
-            inBetween = !inBetween;
+            inBetween = !inBetween
           }
-          if (inBetween && lastChecked) { //解决直接shift点击选中的bug
-            checkbox.checked = true;
+          if (inBetween && lastChecked) { // 解决直接shift点击选中的bug
+            checkbox.checked = true
           }
         })
       }
