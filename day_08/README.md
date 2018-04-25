@@ -38,7 +38,7 @@ canvas.addEventListener('mouseout', () => isDrawing = false)
 * 通过设置direction来动态设置 lineWidth线条的宽度，来判断变细变粗
 * 通过Event时间获取x和y坐标
 ## 涉及相关知识点
-文章详情可见我的blog[canvas基础梳理](https://github.com/592php/blog/edit/master/Canvas/)觉得对你有帮助记得点star哟
+文章详情可见我的blog[canvas基础梳理](https://github.com/terry-ice/blog/edit/master/Canvas/)觉得对你有帮助记得点star哟
 ### canvas 基础梳理
 相关内容
 * 理解<canvas>元素

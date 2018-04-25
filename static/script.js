@@ -3,8 +3,8 @@ const postDatas = []
 // blog url
 const blogUrl = 'http://www.592php.com/'
 // github url
-const githubUrl = 'https://github.com/592php/javascript30day/tree/master/'
-const github = 'https://592php.github.io/javascript30day/'
+const githubUrl = 'https://github.com/terry-ice/javascript30day/tree/master/'
+const github = 'https://terry-ice.github.io/javascript30day/'
 
 const couseList = document.querySelector('.courseList')
 fetch('static/index.json')
