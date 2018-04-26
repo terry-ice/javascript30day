@@ -10,4 +10,5 @@ vendor
 *.ear
 .DS_Store
 *.iml
+*.mp4
 #pkg
