@@ -15,6 +15,9 @@ id | 名称 | 笔记 | Demo
 8 | Fun with HTML5 Canvas (day08) | [通过canvas实现渐变绘图](https://github.com/terry-ice/javascript30day/tree/master/day_08/) |  [通过canvas实现渐变绘图](https://terry-ice.github.io/javascript30day/day_09d/)
 9 | 14 Must Know Dev Tools Tricks(day09) | [控制台调试输出](https://github.com/terry-ice/javascript30day/tree/master/day_09/) |  [控制台调试输出](https://terry-ice.github.io/javascript30day/day_08/)
 10 | Hold Shift to Check Multiple Checkboxes (day10) | [通过shift实现多选](https://github.com/terry-ice/javascript30day/tree/master/day_10/) |  [通过shift实现多选](https://terry-ice.github.io/javascript30day/day_10/)
+11 | Custom HTML5 Video Player (day11) | [HTML5的video播放器功能](https://github.com/terry-ice/javascript30day/tree/master/day_11/) |  [HTML5的video播放器功能](https://terry-ice.github.io/javascript30day/day_11/)
+12 | Key Sequence Detection (day12) | [匹配输入字符内容](https://github.com/terry-ice/javascript30day/tree/master/day_12/) |  [匹配输入字符内容](https://terry-ice.github.io/javascript30day/day_12/)
+13 | Slide in on Scroll(day13) | [滚动图片动画](https://github.com/terry-ice/javascript30day/tree/master/day_13/) |  [滚动图片动画](https://terry-ice.github.io/javascript30day/day_13/)
 
 ## 时间
 - 开始日期2018年04月03日
@@ -30,9 +33,9 @@ id | 名称 | 笔记 | Demo
 - [x] Fun with HTML5 Canvas -- 完成✨✨🎉🎉
 - [x] 14 Must Know Dev Tools Tricks -- 完成✨✨🎉🎉
 - [x] Hold Shift to Check Multiple Checkboxes -- 完成✨✨🎉🎉
-- [ ] Custom HTML5 Video Player
-- [ ] Key Sequence Detection (KONAMI CODE)
-- [ ] Slide In on Scroll
+- [x] Custom HTML5 Video Player -- 完成✨✨🎉🎉
+- [x] Key Sequence Detection (KONAMI CODE) -- 完成✨✨🎉🎉
+- [x] Slide In on Scroll -- 完成✨✨🎉🎉
 - [ ] Object and Arrays - Reference VS Copy
 - [ ] LocalStorage and Event Delegation
 - [ ] CSS Text Shadow Mouse Move Effect

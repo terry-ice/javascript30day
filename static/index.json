@@ -68,5 +68,26 @@
     "desc": "通过shift实现多选",
     "blog": "",
     "github": "day_10/"
+  },
+  {
+    "no": 11,
+    "title": "Custom HTML5 Video Player",
+    "desc": "HTML5的video播放器功能",
+    "blog": "",
+    "github": "day_11/"
+  },
+  {
+    "no": 12,
+    "title": "Key Sequence Detection",
+    "desc": "匹配输入字符内容",
+    "blog": "",
+    "github": "day_12/"
+  },
+  {
+    "no": 13,
+    "title": "Slide in on Scroll",
+    "desc": "滚动图片动画",
+    "blog": "",
+    "github": "day_13/"
   }
 ]
