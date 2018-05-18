@@ -1,23 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>JS Reference VS Copy</title>
 </head>
+
 <body>
 
   <script>
     // start with strings, numbers and booleans
-
+    let a = 'aaa'
+    let b = a
+    console.log(a, b) // aaa aaa
+    a = 'bbb'
+    console.log(a, b) // bbb aaa
     // Let's say we have an array
     const players = ['Wes', 'Sarah', 'Ryan', 'Poppy']
-
+    let players1 = players
+    console.log(players, 'players')
+    console.log(players1, 'players1')
+    // players.push('terry')
+    // console.log(players, 'players') // 都增加了terry
+    // console.log(players1, 'players1') // 都增加了terry
     // and we want to make a copy of it.
-
+    let players2 = players.slice()
+    // players.push('terry')
+    // console.log(players, 'players')
+    // console.log(players2, 'players2') // copy出来的数组没有变化
     // You might think we can just do something like this:
 
     // however what happens when we update that array?
-
+    let players3 = [].concat(players)
+    // players.push('terry')
+    // console.log(players, 'players')
+    // console.log(players3, 'players3') // copy出来的也没变化
     // now here is the problem!
 
     // oh no - we have edited the original array too!
@@ -31,14 +48,32 @@
     // or create a new array and concat the old one in
 
     // or use the new ES6 Spread
+    let players4 = [...players] // ...展开运算符
 
     // now when we update it, the original one isn't changed
 
     // The same thing goes for objects, let's say we have a person object
 
     // with Objects
-
+    let obj = {
+      name: 'terry',
+      id: '1',
+      like: {
+        eat: '吃',
+        play: '玩'
+      }
+    }
     // and think we make a copy:
+    let obj2 = Object.assign({}, obj) // 浅拷贝
+    let obj4 = { ...obj
+    } // 浅拷贝
+    obj2.like.game = '666'
+    let obj3 = JSON.parse(JSON.stringify(obj)) // 深拷贝
+    obj3.like.game = '999'
+    obj4.like.pic = '0000'
+    console.log(obj)
+    console.log(obj3)
+    console.log(obj4)
 
     // how do we take a copy instead?
 
@@ -48,4 +83,5 @@
   </script>
 
 </body>
+
 </html>
